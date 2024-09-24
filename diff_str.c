@@ -6,6 +6,6 @@ int main() {
 	scanf("%s", a);
 	char b[101];
 	scanf("%s", b);
-	puts(strcmp(a, b) == 0 ? "OK" : "NG");
+	puts(strcmp(a, b) ? "NG" : "OK");
 	return 0;
 }

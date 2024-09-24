@@ -1,0 +1,1 @@
+console.log(Math.min(...require("fs").readFileSync("/dev/stdin", "utf8").trim().split("\n")));

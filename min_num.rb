@@ -1,0 +1,1 @@
+p 5.times.map { gets.to_i }.min

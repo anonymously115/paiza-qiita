@@ -4,15 +4,13 @@ using namespace std;
 int main() {
 	int n;
 	cin >> n;
-	int strike = 0;
-	int ball = 0;
+	int strike = 3;
+	int ball = 4;
 	while (n--) {
 		string s;
 		cin >> s;
-		if (s == "strike")
-			cout << (++strike == 3 ? "out!" : "strike!") << endl;
-		else if (s == "ball")
-			cout << (++ball == 4 ? "fourball!" : "ball!") << endl;
+		if (s == "strike") cout << (--strike ? "strike!" : "out!") << endl;
+		else if (s == "ball") cout << (--ball ? "ball!" : "fourball!") << endl;
 	}
 	return 0;
 }

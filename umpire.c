@@ -4,15 +4,13 @@
 int main() {
 	int n;
 	scanf("%d", &n);
-	int strike = 0;
-	int ball = 0;
+	int strike = 3;
+	int ball = 4;
 	while (n--) {
 		char s[7];
 		scanf("%s", s);
-		if (!strcmp(s, "strike"))
-			puts(++strike == 3 ? "out!" : "strike!");
-		else if (!strcmp(s, "ball"))
-			puts(++ball == 4 ? "fourball!" : "ball!");
+		if (!strcmp(s, "strike")) puts(--strike ? "strike!" : "out!");
+		else if (!strcmp(s, "ball")) puts(--ball ? "ball!" : "fourball!");
 	}
 	return 0;
 }

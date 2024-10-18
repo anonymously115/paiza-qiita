@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+double leftover(double m, double p, double q) {
+	return (m * (100 - p) * (100 - q)) / 10000;
+}
+
 int main() {
-	int m, p, q;
-	scanf("%d %d %d", &m, &p, &q);
-	printf("%.4lf\n", (double) (m * (100 - p) * (100 - q)) / 10000);
+	double m, p, q;
+	scanf("%lf %lf %lf", &m, &p, &q);
+	printf("%.4lf\n", leftover(m, p, q));
 	return 0;
 }
